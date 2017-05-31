@@ -1,0 +1,26 @@
+
+
+.tiles article.teach > .image:before {
+	background-color: #ccffcc;
+}
+
+.tiles article.learn > .image:before {
+	background-color: #f6d089;
+}
+
+#teachBtn{
+	margin-left: 35%;
+	
+}
+
+#btnContainer{
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: #000 !important;
+}
+
+

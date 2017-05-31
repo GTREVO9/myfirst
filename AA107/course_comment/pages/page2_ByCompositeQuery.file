@@ -1,0 +1,54 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<table border="0">    
+<ul class="pager">
+  <%if (rowsPerPage<rowNumber) {%>
+    <%if(pageIndex>=rowsPerPage){%>
+        <li><A href="<%=request.getContextPath()%>/course_comment/course_comment.do?whichPage=<%=whichPage-1%>&action=listCourse_Comment_ByCompositeQuery">上一頁 </A>&nbsp;</li>
+    <%}%>
+    
+    
+     <%for (int i=1; i<=pageNumber; i++){%>
+           <A href="<%=request.getContextPath()%>/course_comment/course_comment.do?whichPage=<%=i%>&action=listCourse_Comment_ByCompositeQuery"><%=i%> </A>&nbsp;          			
+        <%}%> 
+  
+    <%if(pageIndex<pageIndexArray[pageNumber-1]){%>
+        <li><A href="<%=request.getContextPath()%>/course_comment/course_comment.do?whichPage=<%=whichPage+1%>&action=listCourse_Comment_ByCompositeQuery">下一頁 </A>&nbsp;</li>
+    <%}%>
+  <%}%>  
+</ul>
+</table>    
+<%if ( pageNumber > 1) {%>
+
+<%}%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

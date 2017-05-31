@@ -1,0 +1,60 @@
+
+img {
+    border-radius: 50%;  width:150px;  height:150px;
+										
+}
+		
+
+#titleName{
+	background-color:#8CD7D2;
+	/*border:10px solid red;*/		
+}
+
+#titleCont{
+	
+	line-height:200px;
+}
+
+
+
+p[memName]{
+	color:#979797; font-size:25px; 	
+}
+
+
+
+
+#display_hot{
+ /* 
+  
+  height:100px;
+  font:bold 20px Tahoma;
+
+  margin-bottom: 40px;
+  margin-left: -160px;
+  text-align:center;
+  line-height:80px;
+ 
+  color:#FFFFFF;
+  border-radius:10px 10px;
+  
+    border:10px solid red;
+  position: relative;
+  z-index: 1;*/
+  /*  margin:;*/
+  border:1px solid ;
+  height:30%;
+  width:30%px;
+  margin-left:90%;
+  background:#8CD7D2;		
+}
+
+
+#modal-id{
+			 display: block;
+		}
+
+
+
+
+	

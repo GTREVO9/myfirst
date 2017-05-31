@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wcmt_report.model.Wcmt_ReportVO" table="wcmt_report" >
+        
+        <id name="wcrep_no" column="wcrep_no">
+            <generator class="sequence" >
+              <param name="sequence">wcmt_report_seq</param>
+            </generator>  
+        </id>
+        
+        <property name="mem_no" column="mem_no" />
+         <property name="wcmt_no" column="wcmt_no" />   
+        <property name="wcrep_title" column="wcrep_title" />
+        <property name="wcrep_cont" column="wcrep_cont" />
+        <property name="wcrep_time" column="wcrep_time" />
+        <property name="wcrep_status" column="wcrep_status" />
+         <property name="adm_no" column="adm_no" />
+        <property name="wcrep_result" column="wcrep_result" />
+        
+       <set name="Wish_Comments" table="wish_comment" lazy="false" cascade="all"  inverse="true" >			
+			<key>
+				<column name="wcmt_no" />
+			</key>
+			<one-to-many class="com.wish_comment.model.Wish_CommentVO" />
+		</set>
+        
+        
+       
+       
+   	
+        
+    </class>
+</hibernate-mapping>
+
